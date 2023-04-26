@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Beni';
+    src: local('Beni Bold'), local('Beni-Bold'),
+        url('BeniBold.woff2') format('woff2'),
+        url('BeniBold.woff') format('woff'),
+        url('BeniBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

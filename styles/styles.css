@@ -1,0 +1,51 @@
+body{
+    background: url(../imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.filter{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.3rem);
+}
+*{
+    font-family: 'Beni';
+}
+.list-container ul li{
+list-style: none;
+}
+.list-container ul li button{
+    background-color: #fafafa00;
+    border: none;
+    color: white;
+    font-size: 4rem;
+    transition: all .2s ease-in-out;
+
+}
+.list-container ul li button:hover{
+    color: rgb(255, 80, 80);
+    font-size: 5em;
+    transition: all .2s ease-in-out;
+}
+.square{
+    transform: rotate(45deg);
+    background-color: white;
+    height: 8px;
+    width:  8px;
+}
+.aside{
+    width: 3vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+.footer{
+    height: 5vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+.footer img{
+    height: 5vh;
+}
