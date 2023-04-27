@@ -10,26 +10,47 @@
     <script src="js/main.js" defer type="module"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="filter position-relative d-flex">
         <div class="list-container container-fluid d-flex align-items-center h-100">
             <ul>
-                <li class="d-flex align-items-center"><div class="square"></div><button class="" type="button">AGENTS</button></li>
-                <li class="d-flex align-items-center"><div class="square"></div><button class="" type="button">ARSENAL</button></li>
-                <li class="d-flex align-items-center"><div class="square"></div><button class="" type="button">MAPS</button></li>
+                <li class="d-flex align-items-center">
+                    <div class="square"></div><button id="AGENTS" class="" type="button">AGENTS</button>
+                </li>
+                <li class="d-flex align-items-center">
+                    <div class="square"></div><button id="INVENTORY" class="" type="button">INVENTORY</button>
+                </li>
+                <li class="d-flex align-items-center">
+                    <div class="square"></div><button id="MAPS" class="" type="button">MAPS</button>
+                </li>
             </ul>
         </div>
         <div class="aside bg-dark z-1">
             <img class="img-fluid p-2" src="imgs/valorant.png" alt="">
         </div>
         <div class="footer bg-white bottom-0 d-flex align-items-end">
-            <img class="img-fluid p-2" src="imgs/25231.png"  alt="">
+            <img class="img-fluid p-2" src="imgs/25231.png" alt="">
             <img src="imgs/riot-games.png" alt="">
             <p>© 2023 Riot Games, Inc. Todos los derechos reservados.</p>
         </div>
+        <div class="" id="inventoryWindow">
+            <div class="back w-fit d-flex m-5">
+                <button class="w-fit" id="CLOSE"><i class="fa-solid fa-chevron-left fs-1"></i></button>
+                <p class=" fs-5 text-white lh-1 my-auto">B A C K</p>
+            </div>
+            <div class="" id="weaponsWindow">
+                <div class="weapon">
+
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="https://kit.fontawesome.com/c1ad670a2a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

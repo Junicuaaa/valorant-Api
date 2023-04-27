@@ -1,5 +1,5 @@
 let ws = {
-    async getAgents(p1){
+    async getMaps(p1){
 
         try {
             const response = await fetch(p1);
@@ -12,6 +12,6 @@ let ws = {
 }
 
 self.addEventListener("message", async (e) =>{
-    let data = await ws.getAgents(e.data)
+    let data = await ws.getMaps(e.data)
     console.log(data);
 })
