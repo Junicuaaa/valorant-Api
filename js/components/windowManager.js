@@ -23,10 +23,12 @@ export default{
                 console.log(doc);
             }else if(smg){
                 let doc = new DOMParser().parseFromString(smg, "text/html")
-                smgS.append(...doc.body.children)
+                smgS.insertAdjacentHTML("afterbegin", smg)
+
                 console.log(doc);
             }
         })
+        
         ////////////////////////////////////////////////////////
         INVENTORY.addEventListener("click", (e)=>{
             WINDOW.style.display = "block"

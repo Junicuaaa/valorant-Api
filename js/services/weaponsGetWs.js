@@ -14,17 +14,17 @@ let ws = {
                 let heavy = 'heavy'
                 if (arma.includes(rifle)) {
                     html += /*html*/ `                
-                    <div class = "weapon" style="">
+                    <div class = "weapon m-auto" style="">
                         <img class="rifle" src="${element.displayIcon}" alt="">
-                        <p style="display: inline;">${element.displayName}</p>
+                        <p>${element.displayName}</p>
                     </div>
                     `
                     postMessage({rifle: html})
                 }else if(arma.includes(sidearm)){
                     html += /*html*/ `                
-                    <div class =  "weapon" style="">
+                    <div class =  "weapon m-auto" style="">
                         <img class="sidearm" src="${element.displayIcon}" alt="">
-                        <p style="display: inline;">${element.displayName}</p>
+                        <p>${element.displayName}</p>
                     </div>
                     `
                     postMessage({sidearm: html})
@@ -32,7 +32,7 @@ let ws = {
                     html += /*html*/ `                
                     <div class =  "weapon" style="">
                         <img class="shotgun" src="${element.displayIcon}" alt="">
-                        <p style="display: inline;">${element.displayName}</p>
+                        <p>${element.displayName}</p>
                     </div>
                     `
                     postMessage({shotgun: html})
@@ -40,15 +40,15 @@ let ws = {
                     html += /*html*/ `                
                     <div class  = "weapon" style="">
                         <img class="sniper" src="${element.displayIcon}" alt="">
-                        <p style="display: inline;">${element.displayName}</p>
+                        <p>${element.displayName}</p>
                     </div>
                     `
                     postMessage({sniper: html})
                 }else if(arma.includes(smg)){
                     html += /*html*/ `                
-                    <div class =  "weapon" style="">
-                        <img class="smg" src="${element.displayIcon}" alt="">
-                        <p style="display: inline;">${element.displayName}</p>
+                    <div class =  "weapon m-auto w-100%" style="">
+                        <img class="smg m-auto" src="${element.displayIcon}" alt="">
+                        <p class >${element.displayName}</p>
                     </div>
                     `
                     postMessage({smg: html})
@@ -56,7 +56,7 @@ let ws = {
                     html += /*html*/ `                
                     <div class = "weapon" style="">
                         <img class="heavy" src="${element.displayIcon}" alt="">
-                        <p style="display: inline;">${element.displayName}</p>
+                        <p>${element.displayName}</p>
                     </div>
                     `
                     postMessage({heavy: html})

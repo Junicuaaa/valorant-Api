@@ -65,9 +65,13 @@ button{
     position: absolute;
     display: none;
 }
-.weapon{
-    height: 85px;
-}
+
 h2{
     font-family: 'Ubuntu';
+}
+.sidearm {
+    width: 180px; 
+}
+.smg{
+    width: 350px;
 }
