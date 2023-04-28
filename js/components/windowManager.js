@@ -5,13 +5,27 @@ export default{
         const url = 'https://valorant-api.com/v1/weapons';
         const CLOSE = document.querySelector("#CLOSE")
         const WINDOW = document.querySelector("#inventoryWindow")
-        const WEAPONSWINDOW = document.querySelector("#weaponsWindow")
+        const sideArm = document.querySelector(".sidearm")
+        const sniper = document.querySelector(".sniper")
+        const rifle = document.querySelector(".rifle")
+        const shotgun = document.querySelector(".shotgun")
+        const heavy = document.querySelector(".heavy")
+        const smgS = document.querySelector(".smg")
         ////////////////////////////////////////////////////////
         weaponsGet.ws.postMessage({url: url})
         weaponsGet.ws.addEventListener("message", (e)=>{
-            console.log((e.data));
-            let doc = new DOMParser().parseFromString(e.data, "text/html");
-            WEAPONSWINDOW.append(...doc.body.children);
+            let data = e.data
+            console.log(data);
+            let {rifle, sidearm, shotgun, smg, heavy, sniper} = data;
+            if(sidearm){
+                let doc = new DOMParser().parseFromString(sidearm, "text/html")
+                sideArm.append(...doc.body.children)
+                console.log(doc);
+            }else if(smg){
+                let doc = new DOMParser().parseFromString(smg, "text/html")
+                smgS.append(...doc.body.children)
+                console.log(doc);
+            }
         })
         ////////////////////////////////////////////////////////
         INVENTORY.addEventListener("click", (e)=>{

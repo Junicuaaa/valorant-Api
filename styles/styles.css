@@ -66,7 +66,8 @@ button{
     display: none;
 }
 .weapon{
-    width: 200px;
-    height: 200px;
-    background-color: #ffffff;
+    height: 85px;
+}
+h2{
+    font-family: 'Ubuntu';
 }
