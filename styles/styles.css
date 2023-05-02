@@ -23,6 +23,7 @@ button{
     border: none;
     color: #ffffff;
 }
+
 .list-container ul li button{
     background-color: #fafafa00;
     border: none;
@@ -69,9 +70,44 @@ button{
 h2{
     font-family: 'Ubuntu';
 }
-.sidearm {
-    width: 180px; 
-}
+
 .smg{
-    width: 350px;
+    height: 80px !important;
+}
+.sidearm{
+    height: 80px !important;
+}
+p{
+    background-color: #fafafa80;
+}
+.weapon-smg{
+    display: block;
+    width: auto;
+    margin: auto;
+    margin-top: 32px;
+    background-color: #fafafa50;
+    backdrop-filter: blur(10rem);
+}
+.weapon-side{
+    display: block;
+    width: auto;
+    margin: auto;
+    margin-top: 32px;
+    background-color: #fafafa50;
+    backdrop-filter: blur(10rem);
+}
+.weapon-shotgun{
+    display: block;
+    width: auto;
+    margin: auto;
+    margin-bottom: 28px;
+    background-color: #fafafa50;
+    backdrop-filter: blur(10rem);
+}
+.shotgun-container{
+    margin-top: 160px;
+    margin-bottom: none;
+}
+.shotgun{
+    height: 80px !important;
 }

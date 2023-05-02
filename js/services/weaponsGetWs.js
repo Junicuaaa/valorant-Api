@@ -14,48 +14,48 @@ let ws = {
                 let heavy = 'heavy'
                 if (arma.includes(rifle)) {
                     html += /*html*/ `                
-                    <div class = "weapon m-auto" style="">
-                        <img class="rifle" src="${element.displayIcon}" alt="">
+                    <div class = "weapon-rifle m-auto" style="">
+                        <img class="rifle img-fluid" src="${element.displayIcon}" alt="">
                         <p>${element.displayName}</p>
                     </div>
                     `
                     postMessage({rifle: html})
                 }else if(arma.includes(sidearm)){
                     html += /*html*/ `                
-                    <div class =  "weapon m-auto" style="">
-                        <img class="sidearm" src="${element.displayIcon}" alt="">
-                        <p>${element.displayName}</p>
+                    <div class ="weapon-side text-center" style="">
+                        <img class="sidearm img-fluid m-auto" src="${element.displayIcon}" alt="">
+                        <p class="d-block">${element.displayName}</p>
                     </div>
                     `
                     postMessage({sidearm: html})
                 }else if(arma.includes(shotgun)){
                     html += /*html*/ `                
-                    <div class =  "weapon" style="">
-                        <img class="shotgun" src="${element.displayIcon}" alt="">
+                    <div class =  "weapon-shotgun" style="">
+                        <img class="shotgun img-fluid" src="${element.displayIcon}" alt="">
                         <p>${element.displayName}</p>
                     </div>
                     `
                     postMessage({shotgun: html})
                 }else if(arma.includes(sniper)){
                     html += /*html*/ `                
-                    <div class  = "weapon" style="">
-                        <img class="sniper" src="${element.displayIcon}" alt="">
+                    <div class  = "weapon-sniper" style="">
+                        <img class="sniper img-fluid" src="${element.displayIcon}" alt="">
                         <p>${element.displayName}</p>
                     </div>
                     `
                     postMessage({sniper: html})
                 }else if(arma.includes(smg)){
                     html += /*html*/ `                
-                    <div class =  "weapon m-auto w-100%" style="">
-                        <img class="smg m-auto" src="${element.displayIcon}" alt="">
+                    <div class =  "weapon-smg" style="">
+                        <img class="smg m-auto img-fluid" src="${element.displayIcon}" alt="">
                         <p class >${element.displayName}</p>
                     </div>
                     `
                     postMessage({smg: html})
                 }else if(arma.includes(heavy)){
                     html += /*html*/ `                
-                    <div class = "weapon" style="">
-                        <img class="heavy" src="${element.displayIcon}" alt="">
+                    <div class = "weapon-heavy" style="">
+                        <img class="heavy img-fluid" src="${element.displayIcon}" alt="">
                         <p>${element.displayName}</p>
                     </div>
                     `

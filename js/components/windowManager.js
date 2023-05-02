@@ -8,7 +8,7 @@ export default{
         const sideArm = document.querySelector(".sidearm")
         const sniper = document.querySelector(".sniper")
         const rifle = document.querySelector(".rifle")
-        const shotgun = document.querySelector(".shotgun")
+        const shotguN = document.querySelector(".shotgun-container")
         const heavy = document.querySelector(".heavy")
         const smgS = document.querySelector(".smg")
         ////////////////////////////////////////////////////////
@@ -24,7 +24,18 @@ export default{
             }else if(smg){
                 let doc = new DOMParser().parseFromString(smg, "text/html")
                 smgS.insertAdjacentHTML("afterbegin", smg)
-
+                console.log(doc);
+            }else if(shotgun){
+                let doc = new DOMParser().parseFromString(shotgun, "text/html")
+                shotguN.append(...doc.body.children)
+                console.log(doc);
+            }else if(smg){
+                let doc = new DOMParser().parseFromString(smg, "text/html")
+                smgS.insertAdjacentHTML("afterbegin", smg)
+                console.log(doc);
+            }else if(smg){
+                let doc = new DOMParser().parseFromString(smg, "text/html")
+                smgS.insertAdjacentHTML("afterbegin", smg)
                 console.log(doc);
             }
         })
